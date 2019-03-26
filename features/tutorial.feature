@@ -5,6 +5,11 @@ Feature: showing off behave
     When we implement a test
     Then behave will test it for us!
 
+  Scenario: check before all
+    Given we have behave installed
+    When we implement a test
+    Then context server is "simple server"
+
   Scenario: table data scenario
     Given a set of specific users
       | name      | department  |

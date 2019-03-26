@@ -47,3 +47,11 @@ def step_impl(context, text):
         assert True
     else:
         assert False
+
+
+@then('context server is "{text}"')
+def stem_impl(context, text):
+    if text in [context.server]:
+        assert True
+    else:
+        assert False

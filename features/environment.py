@@ -20,5 +20,5 @@ def before_all(context):
 
 
 def before_feature(context, feature):
-    pass
+    context.server = 'complicated server'
     # model.init(environment='test')
