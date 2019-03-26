@@ -8,7 +8,7 @@ def step_impl(context):
 
 @when('we implement a test')
 def step_impl(context):
-    assert True is not False
+    assert True
 
 
 # invoke another step
@@ -26,17 +26,17 @@ def step_impl(context):
 
 @when(u'I press the big red button')
 def step_impl(context):
-    assert True is not False
+    assert True
 
 
 @given(u'I search for a valid book')
 def step_impl(context):
-    assert True is not False
+    assert True
 
 
 @given(u'I search for a invalid book')
 def step_impl(context):
-    assert True is not False
+    assert True
 
 
 @then('the result page will include "{text}"')
@@ -44,5 +44,6 @@ def step_impl(context, text):
     # if text not in context.response:
     #    fail('%r not in %r' % (text, context.response))
     if text in ["success"]:
-        assert True is not False
+        assert True
     else:
+        assert False
