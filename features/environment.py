@@ -20,4 +20,5 @@ def before_all(context):
 
 
 def before_feature(context, feature):
-    model.init(environment='test')
+    pass
+    # model.init(environment='test')
