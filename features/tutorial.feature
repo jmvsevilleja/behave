@@ -1,10 +1,11 @@
 Feature: showing off behave
-
+  @slow @wip
   Scenario: run a simple test
     Given we have behave installed
     When we implement a test
     Then behave will test it for us!
 
+  @slow
   Scenario: check before all
     Given we have behave installed
     When we implement a test

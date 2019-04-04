@@ -88,3 +88,10 @@ These run before and after a section tagged with the given name. They are invoke
 
 `before_all(context)`, `after_all(context)`
 These run before and after the whole shooting match
+
+Tags
+@slow
+behave --tags=slow
+behave --tags="not @slow"
+behave --tags="@wip or @slow"
+behave --tags="@wip and @slow"
